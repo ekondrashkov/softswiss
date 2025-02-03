@@ -1,0 +1,31 @@
+.offers {
+  padding-top: 64px;
+
+  .offers__title {
+    margin: 0;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+
+    @media screen and (max-width: 1248px) {
+      margin-bottom: 32px;
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .offers__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

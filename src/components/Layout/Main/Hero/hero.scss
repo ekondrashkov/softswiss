@@ -1,0 +1,106 @@
+.hero {
+  background: linear-gradient(rgba(15, 20, 32, 0), rgba(15, 20, 32, 0.79)),
+    url("../../../../assets/images/hero.webp") no-repeat center center/cover;
+
+  .hero__container {
+    background: url("../../../../assets/images/earth.png") no-repeat right 40px
+      center;
+
+    @media screen and (max-width: 1248px) {
+      background: url("../../../../assets/images/earth.png") no-repeat right -120px
+        center;
+    }
+
+    @media screen and (max-width: 768px) {
+      background: url("../../../../assets/images/earth.png") no-repeat center
+        top -120px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 32px;
+      max-width: 690px;
+      padding: 100px 0;
+
+      @media screen and (max-width: 1248px) {
+        row-gap: 24px;
+        max-width: 410px;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 250px 0 50px;
+        align-items: center;
+      }
+
+      .hero__title {
+        all: unset;
+        color: #fff;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 100%;
+
+        &_end {
+          color: #ff70d9;
+        }
+
+        @media screen and (max-width: 1248px) {
+          font-size: 48px;
+        }
+
+        @media screen and (max-width: 768px) {
+          text-align: center;
+          font-size: 36px;
+        }
+      }
+
+      .hero__subtitle {
+        all: unset;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 120%;
+
+        &_end {
+          color: #ebff00;
+        }
+
+        @media screen and (max-width: 1248px) {
+          font-size: 22px;
+        }
+
+        @media screen and (max-width: 768px) {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+
+      .hero__button {
+        all: unset;
+        padding: 16px 40px;
+        background-color: #ebff00;
+        border-radius: 28px;
+        color: #000;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 100%;
+        opacity: 1;
+        cursor: pointer;
+        user-select: none;
+        transition: opacity 0.2s ease-in-out;
+
+        &:hover {
+          opacity: 0.6;
+        }
+
+        @media screen and (max-width: 768px) {
+          padding: 8px 40px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
